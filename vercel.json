@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    { "source": "/asvab", "destination": "/asvab/index.html" },
+    { "source": "/asvab/", "destination": "/asvab/index.html" },
+    { "source": "/privacy", "destination": "/asvab/privacy.html" },
+    { "source": "/terms", "destination": "/asvab/terms.html" },
+    { "source": "/delete-account", "destination": "/asvab/delete-account.html" },
+    { "source": "/odakla/privacy", "destination": "/odakla/privacy.html" },
+    { "source": "/ags/privacy", "destination": "/ags/privacy.html" },
+    { "source": "/asvab/privacy", "destination": "/asvab/privacy.html" },
+    { "source": "/asvab/terms", "destination": "/asvab/terms.html" },
+    { "source": "/asvab/delete-account", "destination": "/asvab/delete-account.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}
