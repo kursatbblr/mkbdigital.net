@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,7 +7,10 @@
       name="description"
       content="MKB Digital builds practical mobile apps for study, focus, and exam readiness."
     />
-    <title>MKB Digital - Mobile App Studio</title>
+    <title>MKB Digital — Mobile App Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
@@ -20,75 +23,89 @@
         </a>
         <div class="header-tools">
           <nav class="nav-links" aria-label="Page">
-            <a href="#portfolio">Our products</a>
+            <a href="#products">Products</a>
             <a href="/asvab">ASVAB Prep</a>
             <a href="#contact">Contact</a>
           </nav>
+          <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+            <svg class="theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </button>
         </div>
       </div>
     </header>
 
     <div class="nav-mobile wrap" aria-label="Mobile menu">
-      <a href="#portfolio">Our products</a>
+      <a href="#products">Products</a>
       <a href="/asvab">ASVAB Prep</a>
       <a href="#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode" style="margin-left:auto">
+        <span class="theme-toggle-track">
+          <span class="theme-toggle-thumb"></span>
+        </span>
+        <svg class="theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
     </div>
-
     <main>
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy">
             <p class="hero-badge">Mobile app studio</p>
-            <h1>Practical apps for study, focus, and exam readiness.</h1>
+            <h1>Apps built around real habits.</h1>
             <p class="hero-lead">
-              MKB Digital builds focused mobile products with clear workflows, progress tracking, subscriptions, and
-              public support pages for real store launches.
+              Study. Focus. Progress. Small products with clear jobs — store-ready, privacy-first.
             </p>
             <div class="hero-actions">
               <a class="btn-store primary" href="/asvab">Explore ASVAB Prep</a>
-              <a class="btn-store" href="#portfolio">View portfolio</a>
+              <a class="btn-store" href="#products">View products</a>
             </div>
           </div>
 
-          <div class="studio-preview" aria-label="MKB Digital product overview">
+          <div class="studio-preview" aria-label="Product overview">
             <div class="studio-preview-head">
-              <span>MKB Digital</span>
               <strong>Mobile products</strong>
             </div>
 
-            <a class="studio-featured" href="/asvab">
-              <span class="studio-status">Featured product</span>
-              <strong>ASVAB Prep 2026</strong>
-              <small>AFQT practice, full ASVAB coverage, mock exams, progress tracking, and AI study support.</small>
-              <span class="studio-link">View product page</span>
-            </a>
-
             <div class="studio-product-list">
-              <div class="studio-preview-row">
+              <a class="studio-preview-row studio-preview-row--link" href="/asvab">
+                <span class="product-dot product-dot--gold"></span>
+                <div>
+                  <strong>ASVAB Prep 2026</strong>
+                  <small>AFQT practice, mock exams, AI mentor</small>
+                </div>
+                <span class="product-state product-state--featured">Featured</span>
+                <svg class="studio-row-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+              </a>
+              <a class="studio-preview-row studio-preview-row--link" href="/odakla">
                 <span class="product-dot product-dot--green"></span>
                 <div>
                   <strong>Odakla</strong>
-                  <small>Live focus timer on Google Play</small>
+                  <small>Focus timer on Google Play</small>
                 </div>
                 <span class="product-state product-state--live">Live</span>
-              </div>
-              <div class="studio-preview-row">
+                <svg class="studio-row-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+              </a>
+              <div class="studio-preview-row studio-preview-row--muted">
                 <span class="product-dot product-dot--blue"></span>
                 <div>
                   <strong>AGS Pro</strong>
-                  <small>Structured exam practice in development</small>
+                  <small>Structured exam practice — coming soon</small>
                 </div>
-                <span class="product-state">Build</span>
+                <span class="product-state">In dev</span>
               </div>
             </div>
 
             <div class="studio-principles">
               <div>
                 <strong>Store ready</strong>
-                <span>Privacy, terms, and support</span>
+                <span>Privacy, terms, support</span>
               </div>
               <div>
-                <strong>Focused scope</strong>
+                <strong>Focused</strong>
                 <span>Small products, clear jobs</span>
               </div>
             </div>
@@ -96,119 +113,95 @@
         </div>
       </section>
 
-      <section class="studio-values" aria-label="MKB Digital principles">
-        <div class="wrap value-grid">
-          <div>
-            <strong>Built around a habit</strong>
-            <p>Each product starts from a repeatable daily action: study, review, focus, or measure progress.</p>
-          </div>
-          <div>
-            <strong>Prepared for launch</strong>
-            <p>Store pages, privacy policies, account support, and subscription details stay aligned with the app.</p>
-          </div>
-          <div>
-            <strong>Clear product direction</strong>
-            <p>Features are kept practical, measurable, and tied to a specific user outcome.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="portfolio">
+      <section class="section" id="products">
         <div class="wrap">
           <h2 class="section-title">Our products</h2>
-          <p class="section-sub">
-            A focused portfolio around preparation, learning routines, and everyday progress.
-          </p>
+          <p class="section-sub">Focused tools around preparation, learning, and everyday progress.</p>
 
           <div class="project-grid">
             <article class="project-card project-card--asvab">
-              <div class="project-visual project-visual--asvab" aria-hidden="true">
-                <span></span>
-                <strong>AFQT</strong>
-              </div>
               <div class="project-card-head">
                 <h3>ASVAB Prep</h3>
                 <span class="project-badge project-badge--featured">Featured</span>
               </div>
-              <p>AFQT-focused practice, full ASVAB coverage, mock exams, streaks, ranks, and AI-guided study support.</p>
-              <ul class="project-points">
-                <li>AFQT + full ASVAB</li>
-                <li>Mock exams</li>
-                <li>AI mentor</li>
-              </ul>
+              <p>AFQT-focused practice, full ASVAB coverage, mock exams, and AI-guided study.</p>
               <div class="project-actions">
                 <a class="btn-store primary" href="/asvab">View ASVAB page</a>
               </div>
             </article>
 
             <article class="project-card">
-              <div class="project-visual project-visual--odakla" aria-hidden="true">
-                <span></span>
-                <strong>25:00</strong>
-              </div>
               <div class="project-card-head">
                 <h3>Odakla</h3>
                 <span class="project-badge project-badge--live">Live</span>
               </div>
-              <p>Pomodoro-style focus sessions, simple task tracking, and a calmer route into deep work.</p>
-              <ul class="project-points">
-                <li>Focus timer</li>
-                <li>Task flow</li>
-                <li>Daily rhythm</li>
-              </ul>
+              <p>Pomodoro focus timer with task tracking and daily rhythm. A calmer route into deep work.</p>
               <div class="project-actions">
-                <a
-                  class="btn-store primary"
+                <a class="btn-store" href="/odakla">Odakla page</a>
+                <a class="btn-store primary"
                   href="https://play.google.com/store/apps/details?id=com.odakla.app"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Google Play</a
-                >
+                  rel="noopener noreferrer" target="_blank">Google Play</a>
               </div>
             </article>
 
             <article class="project-card">
-              <div class="project-visual project-visual--ags" aria-hidden="true">
-                <span></span>
-                <strong>QBank</strong>
-              </div>
               <div class="project-card-head">
                 <h3>AGS Pro</h3>
                 <span class="project-badge">In development</span>
               </div>
-              <p>A planned exam preparation platform for teacher candidates, built around structured practice.</p>
-              <ul class="project-points">
-                <li>Question practice</li>
-                <li>Progress view</li>
-                <li>Exam routines</li>
-              </ul>
+              <p>A planned exam platform for teacher candidates — structured question practice and progress tracking.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <div class="wrap">
-        <section class="cta-band" id="contact" aria-labelledby="cta-title">
-          <h2 id="cta-title">Product support and business inquiries</h2>
-          <p>Contact MKB Digital for app support, product questions, or partnership inquiries.</p>
-          <p class="cta-email">
-            <a href="mailto:support@mkbdigital.net">support@mkbdigital.net</a>
-          </p>
-        </section>
-      </div>
+      <section class="section cta-section" id="contact">
+        <div class="wrap">
+          <div class="cta-band" aria-labelledby="cta-title">
+            <h2 id="cta-title">Product support &amp; inquiries</h2>
+            <p>Questions about an app? Partnership ideas? We're listening.</p>
+            <p class="cta-email">
+              <a href="mailto:support@mkbdigital.net">support@mkbdigital.net</a>
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap inner">
         <p>&copy; 2026 MKB Digital</p>
         <div class="footer-links">
-          <a href="/odakla/privacy">Privacy - Odakla</a>
-          <a href="/ags/privacy">Privacy - AGS Pro</a>
-          <a href="/asvab/privacy">Privacy - ASVAB Prep</a>
-          <a href="/asvab/terms">Terms - ASVAB Prep</a>
+          <a href="/odakla/privacy">Privacy — Odakla</a>
+          <a href="/ags/privacy">Privacy — AGS Pro</a>
+          <a href="/asvab/privacy">Privacy — ASVAB Prep</a>
+          <a href="/asvab/terms">Terms — ASVAB Prep</a>
           <a href="mailto:support@mkbdigital.net">Contact</a>
         </div>
       </div>
     </footer>
+
+    <script>
+      (function() {
+        const html = document.documentElement;
+        const toggles = document.querySelectorAll('.theme-toggle');
+        const saved = localStorage.getItem('mkb-theme');
+
+        if (saved) {
+          html.setAttribute('data-theme', saved);
+        } else {
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          html.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+        }
+
+        toggles.forEach(function(toggle) {
+          toggle.addEventListener('click', function() {
+          const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-theme', next);
+            localStorage.setItem('mkb-theme', next);
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
