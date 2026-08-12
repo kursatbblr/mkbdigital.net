@@ -7,6 +7,8 @@
     { "source": "/delete-account", "destination": "/asvab/delete-account.html" },
     { "source": "/odakla/privacy", "destination": "/odakla/privacy.html" },
     { "source": "/odakla/privacy/", "destination": "/odakla/privacy.html" },
+    { "source": "/odakla/delete-account", "destination": "/odakla/delete-account.html" },
+    { "source": "/odakla/delete-account/", "destination": "/odakla/delete-account.html" },
     { "source": "/odakla", "destination": "/odakla/index.html" },
     { "source": "/odakla/", "destination": "/odakla/index.html" },
     { "source": "/ags/privacy", "destination": "/ags/privacy.html" },
