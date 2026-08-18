@@ -2559,7 +2559,7 @@ a:hover {
 .odakla-hero-title { margin: 0; font-size: clamp(2.2rem, 6vw, 4.2rem); font-weight: 900; line-height: 1.08; letter-spacing: -0.03em; max-width: 560px; }
 .odakla-hero-sub { margin: 0; font-size: clamp(1rem, 2.5vw, 1.2rem); font-weight: 600; color: var(--odakla-muted); max-width: 400px; line-height: 1.6; }
 .odakla-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; padding-top: 8px; }
-.odakla-cta { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border-radius: 999px; font-weight: 800; font-size: 1rem; background: var(--odakla-cta); color: #fff !important; transition: background 0.2s, transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 24px rgba(224, 112, 64, 0.35); }
+.odakla-cta { display: inline-flex; align-items: center; gap: 12px; padding: 16px 34px; border-radius: 999px; font-weight: 800; font-size: 1.1rem; background: var(--odakla-cta); color: #fff !important; transition: background 0.2s, transform 0.2s, box-shadow 0.2s; box-shadow: 0 6px 28px rgba(224, 112, 64, 0.4); }
 .odakla-cta:hover { background: var(--odakla-cta-hover); color: #fff !important; transform: translateY(-1px); box-shadow: 0 6px 30px rgba(224, 112, 64, 0.45); }
 .odakla-cta svg { flex-shrink: 0; }
 .odakla-store-btn { display: inline-flex; align-items: center; gap: 12px; padding: 12px 22px; border-radius: 16px; border: 1px solid var(--odakla-border); background: rgba(255, 255, 255, 0.06); color: var(--odakla-text) !important; text-decoration: none; transition: background 0.2s, border-color 0.2s, transform 0.2s; }
@@ -2585,11 +2585,61 @@ a:hover {
 .odakla-footer-inner nav { display: flex; gap: 18px; }
 .odakla-footer-inner nav a { color: var(--odakla-muted); font-weight: 700; transition: color 0.2s; }
 .odakla-footer-inner nav a:hover { color: var(--odakla-text); }
+.odakla-contact { padding: 20px 0 96px; }
+.odakla-contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.odakla-contact-mark {
+  width: 8px;
+  height: 8px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+  background: var(--odakla-cta);
+  box-shadow: 0 0 0 7px rgba(224, 112, 64, 0.16), 0 0 0 16px rgba(224, 112, 64, 0.07);
+}
+.odakla-contact-title {
+  margin: 0 0 10px;
+  font-size: clamp(1.55rem, 4vw, 2rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+.odakla-contact-copy {
+  margin: 0 0 28px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--odakla-muted);
+  line-height: 1.6;
+  max-width: 34ch;
+}
+.odakla-contact-mail {
+  color: var(--odakla-text) !important;
+  font-weight: 800;
+  font-size: 1.12rem;
+  letter-spacing: -0.02em;
+  border-bottom: 1.5px solid rgba(224, 112, 64, 0.5);
+  padding-bottom: 3px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.odakla-contact-mail:hover {
+  color: var(--odakla-cta) !important;
+  border-bottom-color: var(--odakla-cta);
+  text-decoration: none;
+}
 @media (max-width: 900px) { .odakla-features-grid { grid-template-columns: 1fr; } }
 @media (max-width: 640px) {
   .odakla-hero { padding: 48px 0 40px; }
   .odakla-mark { width: 76px; height: 76px; }
   .odakla-glow { width: 340px; height: 280px; top: -60px; }
+  .odakla-contact { padding: 12px 0 64px; }
+  .odakla-contact-mail { font-size: 0.95rem; overflow-wrap: anywhere; }
 }
 
 /* Odakla Privacy */
