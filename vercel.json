@@ -14,7 +14,15 @@
     { "source": "/ags/privacy", "destination": "/ags/privacy.html" },
     { "source": "/asvab/privacy", "destination": "/asvab/privacy.html" },
     { "source": "/asvab/terms", "destination": "/asvab/terms.html" },
-    { "source": "/asvab/delete-account", "destination": "/asvab/delete-account.html" }
+    { "source": "/asvab/delete-account", "destination": "/asvab/delete-account.html" },
+    {"source": "/emniyet-kariyer", "destination": "/emniyet-kariyer/index.html"},
+    {"source": "/emniyet-kariyer/", "destination": "/emniyet-kariyer/index.html"},
+    {"source": "/emniyet-kariyer/privacy", "destination": "/emniyet-kariyer/privacy.html"},
+    {"source": "/emniyet-kariyer/privacy/", "destination": "/emniyet-kariyer/privacy.html"},
+    {"source": "/emniyet-kariyer/terms", "destination": "/emniyet-kariyer/terms.html"},
+    {"source": "/emniyet-kariyer/terms/", "destination": "/emniyet-kariyer/terms.html"},
+    {"source": "/emniyet-kariyer/delete-account", "destination": "/emniyet-kariyer/delete-account.html"},
+    {"source": "/emniyet-kariyer/delete-account/", "destination": "/emniyet-kariyer/delete-account.html"}
   ],
   "headers": [
     {
